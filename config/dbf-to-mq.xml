@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<root>
+  <q_source>
+    <dbf>
+      <file_path enable = "true">
+        <topic>sdbf_sh</topic>
+        <market >sh</market>
+        <delay>2000</delay>
+        <init>8:30:00</init>
+        <start >8:30:00</start>
+        <end >15:30:00</end>
+        <path note="上海dbf绝对路径" >D:\\Ericbase\\project\\quote_dbf\\show2003.dbf</path>
+        <hq_field enable="true">
+          <date default = "1970-01-01" note="市场日期">mdate</date>
+          <time  default = "08-00-00" note="市场时间">mtime</time>
+          <jys default = 'sh' note="交易所代码">excode</jys>
+          <ztj default = '0.00' note="涨停价">max</ztj>
+          <dtj  default = '0.00' note="跌停价">min</dtj>
+          <jsp default='0.00' note="收盘价">close</jsp>
+          <fields>
+            <field colume="0" note="合约代码">code</field>
+            <field colume="2" note="昨收盘">preclose</field>
+            <field colume="3" note="开盘价">open</field>
+            <field colume="4" note="成交总金额">tval</field>
+            <field colume="5" note="最高价">high</field>
+            <field colume="6" note="最低价">low</field>
+            <field colume="7" note="最新价">last</field>
+            <field colume="8" note="买一价">buy1</field>
+            <field colume="9" note="卖一价">sell1</field>
+            <field colume="10" note="成交总量">tvol</field>
+            <field colume="12" note="买一量">bvol1</field>
+            <field colume="13" note="买二价">buy2</field>
+            <field colume="14" note="买二量">bvol2</field>
+            <field colume="15" note="买三价">buy3</field>
+            <field colume="16" note="买三量">bvol3</field>
+            <field colume="17" note="卖一量">svol1</field>
+            <field colume="18" note="卖二价">sell2</field>
+            <field colume="19" note="卖二量">svol2</field>
+            <field colume="20" note="卖三价">sell3</field>
+            <field colume="21" note="卖三量">svol3</field>
+            <field colume="22" note="买四价">buy4</field>
+            <field colume="23" note="买四量">bvol4</field>
+            <field colume="24" note="买五价">buy5</field>
+            <field colume="25" note="买五量">bvol5</field>
+            <field colume="26" note="卖四价">sell4</field>
+            <field colume="27" note="卖四量">svol4</field>
+            <field colume="28" note="卖五价">sell5</field>
+            <field colume="29" note="卖五量">svol5</field>
+          </fields>
+        </hq_field>
+      </file_path>
+      <file_path enable = "true">
+        <topic>sdbf_sz</topic>
+        <market >sz</market>
+        <delay>3000</delay>
+        <init>8:30:00</init>
+        <start >8:30:00</start>
+        <end >15:30:00</end>
+        <path note="深圳dbf绝对路径">D:\\Ericbase\\project\\quote_dbf\\SJSHQ.dbf</path>
+        <hq_field enable="true">
+          <date default = "1970-01-01" note="市场日期">mdate</date>
+          <time  default = "08-00-00" note="市场时间">mtime</time>
+          <jys default = '' note="交易所代码">excode</jys>
+          <ztj default = '0.00' note="涨停价">max</ztj>
+          <dtj  default = '0.00' note="跌停价">min</dtj>
+          <jsp default='0.00' note="收盘价">close</jsp>
+          <fields>
+            <field colume="0" note="合约代码">code</field>
+            <field colume="4" noszte="最新价">last</field>
+            <field colume="8" note="最高价">high</field>
+            <field colume="9" note="最低价">low</field>
+            <field colume="2" note="昨收盘">preclose</field>
+            <field colume="3" note="开盘价">open</field>
+            <field colume="5" note="成交总量">tvol</field>
+            <field colume="6" note="成交总金额">tval</field>
+            <field colume="25" note="买一价">buy1</field>
+            <field colume="26" note="买一量">bvol1</field>
+            <field colume="27" note="买二价">buy2</field>
+            <field colume="28" note="买二量">bvol2</field>
+            <field colume="29" note="买三价">buy3</field>
+            <field colume="30" note="买三量">bvol3</field>
+            <field colume="31" note="买四价">buy4</field>
+            <field colume="32" note="买四量">bvol4</field>
+            <field colume="33" note="买五价">buy5</field>
+            <field colume="34" note="买五量">bvol5</field>
+            <field colume="24" note="卖一量">svol1</field>
+            <field colume="23" note="卖一价">sell1</field>
+            <field colume="22" note="卖二量">svol2</field>
+            <field colume="21" note="卖二价">sell2</field>
+            <field colume="20" note="卖三量">svol3</field>
+            <field colume="19" note="卖三价">sell3</field>
+            <field colume="18" note="卖四量">svol4</field>
+            <field colume="17" note="卖四价">sell4</field>
+            <field colume="16" note="卖五量">svol5</field>
+            <field colume="15" note="卖五价">sell5</field>
+          </fields>
+        </hq_field>
+      </file_path>
+    </dbf>
+  </q_source>
+</root>
